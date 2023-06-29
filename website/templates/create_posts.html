@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block title %}Home{% endblock %}
+{% block content %}
+<h1 align="center">Make a Post</h1>
+
+<form method="POST">
+    <div class="row g-3">
+        <div class="col-auto">
+            <label>Book Title</label>
+            <textarea name="book_title" id="book_title" class="form-control"></textarea>
+        </div>
+        <!--
+        <div class="col-auto">
+            <label>Page Count</label>
+            <textarea class="form-control-plaintext" for="page_count" name="page_count" id="page_count" placeholder="# of Pages"></textarea>
+        </div>
+        <div class="col-auto">
+            <label>Release Year</label>
+            <textarea class="form-control-plaintext" for="release_year" name="release_year" id="release_year" placeholder="Release Year"></textarea>
+        </div>
+        <div class="col-auto">
+            <label>Author</label>
+            <textarea class="form-control-plaintext" for="book_author" name="book_author" id="book_author" placeholder="Author"></textarea>
+        </div> -->
+        <br />
+
+        <textarea name="text" id="text" class="form-control"></textarea>
+        <br />
+        <button type="submit" class="btn btn-lg btn-primary">Post</button>
+    </div>
+
+</form>
+<br />
+<div align="center">
+    <a href="/home">
+        <button type="button" class="btn btn-primary btn-lg btn-secondary">Back</button>
+    </a>
+</div>
+{% endblock %}
